@@ -16,8 +16,8 @@ attr_accessor :bear_name
 
   def add_fish_to_stomach(fish)
     @stomach_contents.push(fish)
-    puts stomach_contents_count
-    puts bear_roars
+    return stomach_contents_count
+    return bear_roars
   end
 
 
