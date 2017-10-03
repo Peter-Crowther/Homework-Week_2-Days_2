@@ -1,11 +1,17 @@
 class Bear
-attr_reader :bear_name, :stomach_contents
-  def initialize(bear_name, stomach_contents)
+attr_accessor :bear_name
+
+  def initialize(bear_name)
     @bear_name = bear_name
-    @stomach_contents = stomach_contents
+    @stomach_contents = []
   end
 
+  def stomach_contents_count
+  @stomach_contents.count
+  end
 
-
+  def add_fish_to_stomach(fish)
+    @stomach_contents.push(fish)
+  end
 
 end
