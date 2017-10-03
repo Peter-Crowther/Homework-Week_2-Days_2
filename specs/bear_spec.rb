@@ -24,6 +24,10 @@ class TestBear <MiniTest::Test
     assert_equal(0, @bear.stomach_contents_count)
   end
 
+  def test_bear_roars
+    assert_equal("RROOAARR!!", @bear.bear_roars)
+  end
+
 
   def test_bear_eats_fish
     @bear.add_fish_to_stomach(@trout)

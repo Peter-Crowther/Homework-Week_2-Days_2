@@ -11,6 +11,7 @@ class River
 
   def bear_eats_fish_from_river(fish)
     @fish_in_river.delete(fish)
+    return fish_count
   end
 
 
